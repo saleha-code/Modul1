@@ -2,12 +2,115 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
     <script>
-      mm;
+      // Uppgift 1
+
+      var x = 2;
+      let y = 3;
+      const z = 4;
+
+      // Uppgift 2
+
+      let myBoolean = false;
+
+      let myNumber = 1;
+
+      let myString = "This is a string";
+
+      let myObject = { fruit: "Mango", color: "Yellow" };
+
+      let myArray = ["Lion", "Monkey", "Macaw"];
+
+      // Uppgift 3
+
+      let sum = addTwoNumbers(3, 4);
+
+      //alert("The sum becomes: " + sum);
+      console.log("The sum becomes: " + sum);
+
+      function addTwoNumbers(x, y) {
+        return x + y;
+      }
+
+      // Uppgift 4
+
+      let currentDateTime = new Date();
+      //alert("today date is " + currentDateTime + ".");
+      console.log(currentDateTime);
+
+      // Uppgift 5
+
+      // definition of an object 'person'
+      let person = {
+        //properties of the object
+        firstName: "Zyad",
+        lastName: "Ali",
+        age: 12,
+
+        //method of the object
+        logPropertiesToConsole: function () {
+          console.log("firstName: " + this.firstName);
+          console.log("lastName: " + this.lastName);
+          console.log("age: " + this.age);
+        },
+      };
+
+      // declare an object 'myPerson'
+      // this actually creates the object
+      let myPerson = person;
+
+      myPerson.logPropertiesToConsole();
+
+      // Uppgift 6
+
+      let myFavoriteNumbers = [4, 8, 15, 16, 23, 42];
+      console.log(myFavoriteNumbers);
+      //alert(myFavoriteNumbers);
+
+      let lastValue = myFavoriteNumbers[5];
+      console.log("Last value in array: " + lastValue);
+      //alert("Last value in array: " + lastValue);
+
+      let newArrayValuesLowerThan20 = myFavoriteNumbers.filter((numValue) => {
+        return numValue < 20;
+      });
+
+      console.log(newArrayValuesLowerThan20);
+      //alert(newArrayValuesLowerThan20);
+
+      // map
+      newArrayValuesLowerThan20.map((itemValue) => {
+        return newArrayValuesLowerThan20.push(itemValue);
+      });
+
+      //console.log(newArrayValuesLowerThan20);
+      //alert(newArrayValuesLowerThan20);
+
+      //forEach to log out all values separately
+      newArrayValuesLowerThan20.forEach((i) => {
+        return console.log(i);
+      });
+
+      // Uppgift 7
+
+      let loopCount = 1;
+
+      while (loopCount <= 6) {
+        if (loopCount <= 3) {
+          console.log("Loop " + loopCount);
+        } else {
+          console.log("Almost done ...");
+        }
+
+        //loopCount = loopCount + 1;
+        loopCount++;
+      }
+
+      console.log("Done!");
     </script>
   </body>
 </html>
