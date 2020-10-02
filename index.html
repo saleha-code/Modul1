@@ -83,9 +83,11 @@
       //alert(newArrayValuesLowerThan20);
 
       // map
-      newArrayValuesLowerThan20.map((itemValue) => {
-        return newArrayValuesLowerThan20.push(itemValue);
+
+      let doubleNumbers = newArrayValuesLowerThan20.map(function (y) {
+        return y * 2;
       });
+      console.log(doubleNumbers);
 
       //console.log(newArrayValuesLowerThan20);
       //alert(newArrayValuesLowerThan20);
